@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>Terry Soot</title>
   <meta name="description" content="Terry Soot - Critical thinking and creative agency">
   <meta name="keywords" content="Structure,Idea,Design,Money">
-  <meta name="author" content="Pavlo">
+  <meta name="author" content="Taras Kopot">
   <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -168,6 +167,24 @@
       </div>
     </div>
   </div>
+  <script>
+    const styles = {
+      s3: {
+        href: 'css/main.css',
+        rel: 'stylesheet',
+        type: 'text/css',
+        media: 'only x'
+      }
+    };
+    
+    let stylesheet3 = document.createElement('link');
+    stylesheet3.href = styles.s3.href;
+    stylesheet3.rel = styles.s3.rel;
+    stylesheet3.type = styles.s3.type;
+    stylesheet3.media = styles.s3.media;
+    stylesheet3.onload = function() {stylesheet3.media = 'all'}
+    document.getElementsByTagName('head')[0].appendChild(stylesheet3);
+  </script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/scripts.min.js"></script>
   <script>
