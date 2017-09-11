@@ -141,42 +141,19 @@ $(document).ready(function () {
 
 //change-color-inform
 //$(document).ready(function () {
+//
+////chenge class in HTML
+//
 //  $(".accordion").click(function () {
-//    $(".accordion").toggleClass("changeColor").removeClass('changeColor')
-//      $(this).addClass('.colorlink');
-//  });
-//
-//  $(".accordion-1").click(function () {
-//    $(".accordion-color-1").toggleClass("changeColor");
-//  });
-//
-//  $(".accordion-2").click(function () {
-//    $(".accordion-color-2").toggleClass("changeColor");
-//  });
-//
-//  $(".accordion-3").click(function () {
-//    $(".accordion-color-3").toggleClass("changeColor");
+//    $(".accordion-color").toggleClass("changeColor");
 //  });
 //
 //});
 
-//$(document).ready(function () {
-//  $(".accordion").click(function () {
-//    $(".arrow-change-color").toggleClass("changeColor");
-//  });
-//
-//  $(".accordion-1").click(function () {
-//    $(".arrow-change-color-1").toggleClass("changeColor");
-//  });
-//
-//  $(".accordion-2").click(function () {
-//    $(".arrow-change-color-2").toggleClass("changeColor");
-//  });
-//
-//  $(".accordion-3").click(function () {
-//    $(".arrow-change-color-3").toggleClass("changeColor");
-//  });
-//});
+
+
+
+
 //change-color-inform
 
 
