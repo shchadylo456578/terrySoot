@@ -46,11 +46,16 @@ $(document).ready(function () {
 
 
   //INFORM
-  $(".switch").click(function(){
-    $(this).toggleClass("right");
+
+
+  $('.switch').click( function(){
+    if ( $(this).hasClass('right') ) {
+      $(this).removeClass('right');
+    } else {
+      $('.switch').removeClass('right');
+      $(this).addClass('right');
+    }
   });
-
-
 
   $('.accordion-container').hide();
   $('.accordion-toggle').click(function(){
@@ -64,6 +69,7 @@ $(document).ready(function () {
     }
     return false;
   });
+
 
 
 
