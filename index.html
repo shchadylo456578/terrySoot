@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
-  <!--link(rel="stylesheet"  type='text/css' href="css/main.css")-->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>Terry Soot</title>
   <meta name="description" content="Terry Soot - Critical thinking and creative agency">
@@ -15,6 +14,18 @@
   <meta name="theme-color" content="#ffffff">
 </head>
 <body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <div id="preloader" style="position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; overflow: visible; background: #FFF url('//cdnjs.cloudflare.com/ajax/libs/file-uploader/3.7.0/processing.gif') no-repeat center center;);"></div>
+  <script>
+    jQuery(document).ready(function ($) {
+        $(window).load(function () {
+            setTimeout(function () {
+                $('#preloader').fadeOut('500', function () {
+                });
+            }, 300);
+        });
+    });
+  </script>
   <div class="wrapper">
     <div class="header">
       <div class="logo"><img src="images/logo.svg" alt="logo"></div>
