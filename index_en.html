@@ -12,33 +12,33 @@
   <link rel="manifest" href="/manifest.json">
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="theme-color" content="#ffffff">
-  <div id="preloader" style="position: fixed; left: 0; top: 0; z-index: 800; width: 100%; height: 100%; overflow: visible; background: #FFF;">
-    <p class="add-loader" style="margin: 350px auto; border: 3px solid #434A54; width: 120px; color: #434A54; font-size: 22px; padding: 4px 3px 3px; text-align: center; font-weight: 600; font-family:'Proxima Nova', sans-serif, serif, monospace; box-sizing: border-box; line-height: 1.15;"><span class="counter-count">100</span>/100</p>
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script>
-    jQuery(document).ready(function ($) {
-        $(window).load(function () {
-            setTimeout(function () {
-                $('#preloader').fadeOut('300', function () {
-                });
-            }, 200);
-        });
-    
-        $('.counter-count').each(function () {
-            $(this).prop('Counter', 0).animate({
-                Counter: $(this).text()
-            }, {
-                duration: 300,
-                easing: 'swing',
-                step: function (now) {
-                    $(this).text(Math.ceil(now));
-                }
-            });
-        });
-    });
-  </script>
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<div id="preloader" style="position: fixed; left: 0; top: 0; z-index: 800; width: 100%; height: 100%; overflow: visible; background: #FFF;">
+  <p class="add-loader" style="margin: 350px auto; border: 3px solid #434A54; width: 120px; color: #434A54; font-size: 22px; padding: 4px 3px 3px; text-align: center; font-weight: 600; font-family:'Proxima Nova', sans-serif, serif, monospace; box-sizing: border-box; line-height: 1.15;"><span class="counter-count">100</span>/100</p>
+</div>
+<script>
+  jQuery(document).ready(function ($) {
+      $(window).load(function () {
+          setTimeout(function () {
+              $('#preloader').fadeOut('300', function () {
+              });
+          }, 200);
+      });
+  
+      $('.counter-count').each(function () {
+          $(this).prop('Counter', 0).animate({
+              Counter: $(this).text()
+          }, {
+              duration: 300,
+              easing: 'swing',
+              step: function (now) {
+                  $(this).text(Math.ceil(now));
+              }
+          });
+      });
+  });
+</script>
 <body>
   <div class="wrapper">
     <div class="header">
