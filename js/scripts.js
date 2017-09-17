@@ -1,5 +1,4 @@
-
-//COOKIE
+//COOKIE-INFORM
 function getCookie(name) {
     var matches = document.cookie.match(new RegExp(
         "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
@@ -10,7 +9,7 @@ function getCookie(name) {
 
 $(document).ready(function () {
 
-    console.log(getCookie("cookie"));
+    // console.log(getCookie("cookie"));
 
     if (getCookie("cookie") == "true") {
         $(".cookie").remove();
@@ -21,10 +20,10 @@ $(document).ready(function () {
         $(".cookie").addClass("close");
         document.cookie = "cookie=true";
     });
-//COOKIE
+//COOKIE-INFORM
 
 
-//HEADER
+//HEADER-MENU
 
     $(".dropdown-toggle").click(function () {
         $(".dropdown-menu").toggleClass("open");
@@ -42,21 +41,11 @@ $(document).ready(function () {
     });
 
 
-//HEADER
+//HEADER-MENU
 
 
 //INFORM
-
-
-    $('.switch').click(function () {
-        if ($(this).hasClass('right')) {
-            $(this).removeClass('right');
-        } else {
-            $('.switch').removeClass('right');
-            $(this).addClass('right');
-        }
-    });
-
+    //accordion menu
     $('.accordion-container').hide();
     $('.accordion-toggle').click(function () {
         if ($(this).next().not(':hidden')) {
@@ -69,40 +58,67 @@ $(document).ready(function () {
         }
         return false;
     });
+    //accordion menu
 
 
-});
+    //
+    // $(".accordion").click(function () {
+    //     $(".accordion-color").toggleClass("changeColor");
+    // });
 
-//change-color-inform
-$(document).ready(function () {
 
-//chenge class in HTML
 
-    $(".accordion").click(function () {
-        $(".accordion-color").toggleClass("changeColor");
+    // add class color menu accordion arrow onclick before , after
+    // $('.accordion').click(function () {
+    //     $('.arrow').toggleClass('to_show');
+    // });
+
+
+
+    //remove class ARROW_OPEN and close
+    $('.switch').click(function () {
+        if ($(this).hasClass('right')) {
+            $(this).removeClass('right');
+        } else {
+            $('.switch').removeClass('right');
+            $(this).addClass('right');
+        }
     });
+    //remove class ARROW_OPEN and close
 
-});
+    //REMOVE CLASS ARROW C0LOR
+    // $(".accordion").click(function () {
+    //     $(".arrow-open").toggleClass("changeColor");
+    // });
 
+    // $('.switch').click(function () {
+    //     if ($(this).hasClass('.arrow')) {
+    //         $(this).removeClass('.arrow');
+    //     } else {
+    //         $('.switch').removeClass('.arrow');
+    //         $(this).addClass('.arrow');
+    //     }
+    // });
+    //REMOVE CLASS ARROW C0LOR
 
-$(document).ready(function () {
+    //REMOVE CLASS ACCORDION_COLOR TEXT
+    $('.accordion').click(function () {
+        if ($(this).hasClass('changeColorText')) {
+            $(this).removeClass('changeColorText');
+        } else {
+            $('.accordion').removeClass('changeColorText');
+            $(this).addClass('changeColorText');
 
-//chenge class in HTML
-
-    $(".accordion").click(function () {
-        $(".arrow").toggleClass("changeColor");
+        }
     });
+    //REMOVE CLASS ACCORDION_COLOR TEXT
+
 
 });
-
-
-//change-color-inform
-
 //INFORM
 
 
-
-//smoothscroll
+//Smooth scroll
 
 function onScroll(event) {
     var scrollPos = $(document).scrollTop();
@@ -145,7 +161,7 @@ $(document).ready(function () {
 
 });
 
-
+//Smooth scroll
 
 
 
