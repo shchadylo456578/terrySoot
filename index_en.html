@@ -20,16 +20,16 @@
     jQuery(document).ready(function ($) {
         $(window).load(function () {
             setTimeout(function () {
-                $('#preloader').fadeOut('200', function () {
+                $('#preloader').fadeOut('300', function () {
                 });
-            }, 100);
+            }, 200);
         });
     
         $('.counter-count').each(function () {
             $(this).prop('Counter', 0).animate({
                 Counter: $(this).text()
             }, {
-                duration: 200,
+                duration: 300,
                 easing: 'swing',
                 step: function (now) {
                     $(this).text(Math.ceil(now));
