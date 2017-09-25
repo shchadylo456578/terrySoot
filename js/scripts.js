@@ -60,6 +60,15 @@ $(document).ready(function () {
     });
     //accordion menu
 
+    $('.switch').click(function () {
+        if ($(this).hasClass('up-pointer')) {
+            $(this).removeClass('up-pointer');
+        } else {
+            $('.switch').removeClass('up-pointer');
+            $(this).addClass('up-pointer');
+        }
+    });
+
 
     //
     // $(".accordion").click(function () {
@@ -75,30 +84,28 @@ $(document).ready(function () {
 
 
 
-    //remove class ARROW_OPEN and close
-    $('.switch').click(function () {
-        if ($(this).hasClass('right')) {
-            $(this).removeClass('right');
-        } else {
-            $('.switch').removeClass('right');
-            $(this).addClass('right');
-        }
-    });
-    //remove class ARROW_OPEN and close
 
-    //REMOVE CLASS ARROW C0LOR
-    // $(".accordion").click(function () {
-    //     $(".arrow-open").toggleClass("changeColor");
-    // });
+    //color arrow open
 
-    // $('.switch').click(function () {
-    //     if ($(this).hasClass('.arrow')) {
-    //         $(this).removeClass('.arrow');
+    // $('.accordion').click(function () {
+    //     if ($(this).addClass('.arrow .changeColor')) {
+    //         $(this).removeClass('.arrow .changeColor');
     //     } else {
-    //         $('.switch').removeClass('.arrow');
-    //         $(this).addClass('.arrow');
+    //         $('.accordion').removeClass('.arrow .changeColor');
+    //         $(this).addClass('.arrow .changeColor');
+    //
     //     }
     // });
+
+
+
+
+    //ADD AND REMOVE CLASS ARROW C0LOR
+    // $(".accordion").click(function () {
+    //     $(".arrow-open").toggleClass("changeColor");
+    // });s
+
+
     //REMOVE CLASS ARROW C0LOR
 
     //REMOVE CLASS ACCORDION_COLOR TEXT
@@ -116,8 +123,6 @@ $(document).ready(function () {
 
 });
 //INFORM
-
-
 //Smooth scroll
 
 function onScroll(event) {
